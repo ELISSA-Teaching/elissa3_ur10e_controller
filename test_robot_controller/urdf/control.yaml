@@ -1,0 +1,7 @@
+ur10e_joint1_controller:
+  type: position_controllers/JointPositionController
+  link:  base_link_to_link1
+	
+  gazebo_ros_control:
+    pid_gains:
+    base_link_to_link1: (p:100.0, i:10.0, d:19.9)
