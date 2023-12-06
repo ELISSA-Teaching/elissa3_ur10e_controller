@@ -16,5 +16,3 @@ And then open a config window to influence the joints:
 ```ruby
 roslaunch ur10e_moveit_config moveit_planning_execution.launch
 ```
-
-Some things after that fail, like in this tutorial: https://roboticscasual.com/de/ros-tutorial-ur5-roboter-steuern-mit-ros_control-pid-regler-tuning-erklart/#kurzanleitung-ros_control, which fails when trying to use the last command for gazebo. 
