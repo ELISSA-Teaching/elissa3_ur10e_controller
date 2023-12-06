@@ -17,4 +17,12 @@ And then open a config window to influence the joints:
 roslaunch ur10e_moveit_config moveit_planning_execution.launch
 ```
 
-Some things after that fail, like in this tutorial: https://roboticscasual.com/de/ros-tutorial-ur5-roboter-steuern-mit-ros_control-pid-regler-tuning-erklart/#kurzanleitung-ros_control, which fails when trying to use the last command for gazebo. 
+This tutorial describes a simple position controller for the UR5 manipulator arm https://roboticscasual.com/de/ros-tutorial-ur5-roboter-steuern-mit-ros_control-pid-regler-tuning-erklart/#kurzanleitung-ros_control. Doing it for the UR10e by using the following commands.
+
+Create new package:
+```ruby
+catkin_create_pkg ur10e_simple_controller
+```
+Then I changed up the files according to the UR10e.
+
+Some things after that fail are the last command in the tutorial.
