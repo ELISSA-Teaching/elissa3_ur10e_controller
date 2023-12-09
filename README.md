@@ -24,5 +24,19 @@ Create new package:
 catkin_create_pkg ur10e_simple_controller
 ```
 Then I changed up the files according to the UR10e.
+```ruby
+roslaunch gazebo_ros empty_world.launch
+```
+```ruby
+rosrun gazebo_ros spawn_model -file `rospack find ur10e_simple_controller`/urdf/ur10e_control.urdf -urdf -x 0 -y 0 -z 0.1 -model ur10e
+```
+```ruby
+roslaunch ur10e_simple_controller ur10e_joint_position_control.launch
+```
+These commands can also be done with the following command:
+
+```ruby
+roslaunch ur10e_simple_controller ur10e_gazebo_joint_position_control.launch
+```
 
 The UR5 example fails at the last line for me and I still get alot of errors with my own try for the UR10e.
