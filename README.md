@@ -23,7 +23,7 @@ Create new package:
 ```ruby
 catkin_create_pkg ur10e_simple_controller
 ```
-Then I changed up the files according to the UR10e.
+Then I changed up the files according to the UR10e. So I replaced all mentions of the UR5 with UR10e. In addition I replaced all mentions of file names, that I changed up a bit more.
 ```ruby
 roslaunch gazebo_ros empty_world.launch
 ```
