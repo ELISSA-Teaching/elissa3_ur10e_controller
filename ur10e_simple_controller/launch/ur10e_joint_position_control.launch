@@ -1,9 +1,9 @@
 <launch>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find ur10e-joint-position-control)/config/ur10e_controller.yaml" command="load"/>
+  <rosparam file="$(find ur10e_simple_controller)/config/ur10e_controller.yaml" command="load"/>
 
-  <param name="robot_description" textfile="$(find ur10e-joint-position-control)/urdf/ur10e_control.urdf"/>
+  <param name="robot_description" textfile="$(find ur10e_simple_controller)/urdf/ur10e_control.urdf"/>
   
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"

@@ -4,8 +4,8 @@
     <arg name="paused" value="true" />
   </include>
 
-  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-file $(find ur10e_simple_controller)/urdf/ur10e_controller.urdf -urdf -x 0 -y 0 -z 0.1 -model ur10e -J shoulder_lift_joint -1.5 -J elbow_joint 1.0" />
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-file $(find ur10e_simple_controller)/urdf/ur10e_control.urdf -urdf -x 0 -y 0 -z 0.1 -model ur10e -J shoulder_lift_joint -1.5 -J elbow_joint 1.0" />
 
-  <include file="$(find ur10e-joint-position-control)/launch/ur10e_joint_position_control.launch" />
+  <include file="$(find ur10e_simple_controller)/launch/ur10e_joint_position_control.launch" />
 
 </launch>
