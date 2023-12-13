@@ -39,4 +39,8 @@ These commands can also be done with the following command:
 roslaunch ur10e_simple_controller ur10e_gazebo_joint_position_control.launch
 ```
 
-The UR5 example fails at the last line for me and I still get alot of errors with my own try for the UR10e.
+The controller can be tuned in rqt.
+
+```ruby
+rosrun rqt_gui rqt_gui
+```
